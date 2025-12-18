@@ -13,8 +13,6 @@ MapsterConfig.RegisterMapping();
 builder.Services.AddSingleton(config);
 builder.Services.AddScoped<IMapper, ServiceMapper>();
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddExceptionHandler<ExceptionHandler>();
@@ -40,7 +38,6 @@ builder.Services.AddSignalR();
 var app = builder.Build();
 app.UseCors("AngularPolicy");
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
