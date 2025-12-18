@@ -36,7 +36,7 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
-
+builder.Services.AddSignalR();
 var app = builder.Build();
 app.UseCors("AngularPolicy");
 
@@ -52,6 +52,9 @@ app.UseAuthentication();
 app.UseHttpsRedirection();
 
 app.MapAgentEndPoints();
+app.MapUserEndPoints();
+
+app.MapHub<SupportChatHub>("/supportHub");
 
 app.UseExceptionHandler();
 
