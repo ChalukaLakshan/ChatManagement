@@ -1,4 +1,4 @@
-﻿using Domain.Abstraction;
+﻿using Domain.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 
 namespace ChatManagement.Middleware;
@@ -22,7 +22,7 @@ public class ExceptionHandler : IExceptionHandler
         if (exception is not ChatAppException && httpContext.Response.StatusCode >= StatusCodes.Status500InternalServerError)
         {
             httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
-            exceptionMessage = $"Something wentwrong !";
+            exceptionMessage = $"Something went wrong !";
         }
         else
             httpContext.Response.StatusCode = StatusCodes.Status400BadRequest;

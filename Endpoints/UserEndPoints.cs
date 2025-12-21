@@ -4,7 +4,7 @@
     {
         public static void MapUserEndPoints(this IEndpointRouteBuilder app)
         {
-            app.MapPost("/api/users/start-session", async (Service.IBusinessServiceProvider businessServiceProvider, Service.Dto.LoginDto request) =>
+            app.MapPost("/api/users/start-session", async (Service.IServiceProvider businessServiceProvider, Service.Dto.LoginDto request) =>
             {
                 var token = await businessServiceProvider.UserService!.AuthenticateUserAsync(request);
               

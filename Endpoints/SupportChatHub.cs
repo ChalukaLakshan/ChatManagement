@@ -5,8 +5,8 @@ namespace ChatManagement.Endpoints
 {
     public class SupportChatHub : Hub
     {
-        IBusinessServiceProvider _businessServiceProvider;
-        public SupportChatHub(IBusinessServiceProvider businessServiceProvider)
+        Service.IServiceProvider _businessServiceProvider;
+        public SupportChatHub(Service.IServiceProvider businessServiceProvider)
         {
             _businessServiceProvider = businessServiceProvider;
         }

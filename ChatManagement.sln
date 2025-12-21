@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "..\Business\Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatManagement.WorkerService", "..\ChatManagement.WorkerService\ChatManagement.WorkerService.csproj", "{B81994C0-708D-4E4F-B27F-0B2BFA58AF78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{24CA27BF-DEA3-4027-B53B-D9F78CB7A831}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B81994C0-708D-4E4F-B27F-0B2BFA58AF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B81994C0-708D-4E4F-B27F-0B2BFA58AF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B81994C0-708D-4E4F-B27F-0B2BFA58AF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CA27BF-DEA3-4027-B53B-D9F78CB7A831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CA27BF-DEA3-4027-B53B-D9F78CB7A831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CA27BF-DEA3-4027-B53B-D9F78CB7A831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CA27BF-DEA3-4027-B53B-D9F78CB7A831}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

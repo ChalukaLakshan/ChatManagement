@@ -22,7 +22,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("Database"));
 });
-builder.Services.AddScoped<IBusinessServiceProvider, BusinessServiceProvider>();
+builder.Services.AddScoped<Service.IServiceProvider, Service.ServiceProvider>();
 
 builder.Services.AddCors(options =>
 {
